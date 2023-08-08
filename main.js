@@ -508,7 +508,7 @@ if (isValidC === false || isValidMonthYear === false || isValidCSC1 === false) {
 
   dataObj.TotalCost = totalCost.toFixed(2) + "$";
 
-  console.table(dataObj)
+  console.log(dataObj)
 
 
 
