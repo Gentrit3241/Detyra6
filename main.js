@@ -518,7 +518,7 @@ if (isValidC === false || isValidMonthYear === false || isValidCSC1 === false) {
   paymentDataObj.monthYear = MYInput.value;
   paymentDataObj.cscData = CSCInput.value;
 
-  console.log(paymentDataObj)
+  console.table(paymentDataObj)
 
  
 
