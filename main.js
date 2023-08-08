@@ -32,11 +32,11 @@ const advancedTick = document.querySelector(".advanced .tick");
 console.log(advancedTick);
 
 const pro = document.querySelector(".pro");
-console.log(pro);
+(pro);
 const proT = document.querySelector(".pro h3");
-console.log(proT);
+(proT);
 const proTick = document.querySelector(".pro .tick");
-console.log(proTick);
+(proTick);
 
 const bill = document.querySelector(".secondDiv .bill");
 console.log(bill)
@@ -508,7 +508,7 @@ if (isValidC === false || isValidMonthYear === false || isValidCSC1 === false) {
 
   dataObj.TotalCost = totalCost.toFixed(2) + "$";
 
-  console.log(dataObj)
+  console.table(dataObj)
 
 
 
