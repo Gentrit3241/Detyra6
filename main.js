@@ -1,159 +1,159 @@
 const sideDiv = document.querySelector(".sideDiv");
-console.log(sideDiv)
+
 
 //First Div
 const firstDiv = document.querySelector(".firstDiv");
-console.log(firstDiv)
+
 
 const nameInput = document.querySelector(".name")
-console.log(nameInput);
+
 const emailInput = document.querySelector(".email")
-console.log(emailInput);
+
 const phoneInput = document.querySelector(".phone")
-console.log(phoneInput);
+
 
 
 // secondDiv
 const secondDiv = document.querySelector(".secondDiv");
-console.log(secondDiv)
+
 
 const arcade = document.querySelector(".arcade");
-console.log(arcade);
+
 const arcadeT = document.querySelector(".arcade h3");
-console.log(arcadeT);
+
 const arcadeTick = document.querySelector(".arcade .tick");
-console.log(arcadeTick);
+
 
 const advanced = document.querySelector(".advanced");
-console.log(advanced);
+// console.log(advanced);
 const advancedT = document.querySelector(".advanced h3");
-console.log(advancedT);
+// console.log(advancedT);
 const advancedTick = document.querySelector(".advanced .tick");
-console.log(advancedTick);
+// console.log(advancedTick);
 
 const pro = document.querySelector(".pro");
-(pro);
+// (pro);
 const proT = document.querySelector(".pro h3");
-(proT);
+// (proT);
 const proTick = document.querySelector(".pro .tick");
-(proTick);
+// (proTick);
 
 const bill = document.querySelector(".secondDiv .bill");
-console.log(bill)
+// console.log(bill)
 const monthly = document.querySelector(".secondDiv .bill .monthly");
-console.log(monthly)
+// console.log(monthly)
 const yearly = document.querySelector(".secondDiv .bill .yearly");
-console.log(yearly)
+// console.log(yearly)
 
 
 // thirdDiv
 const thirdDiv = document.querySelector(".thirdDiv");
-console.log(thirdDiv)
+// console.log(thirdDiv)
 
 const games = document.querySelector(".games");
-console.log(games);
+// console.log(games);
 const gamesT = document.querySelector(".games h4");
-console.log(gamesT);
+// console.log(gamesT);
 const gamesTick = document.querySelector(".games .tick");
-console.log(gamesTick);
+// console.log(gamesTick);
 
 const storage = document.querySelector(".storage");
-console.log(storage);
+// console.log(storage);
 const storageT = document.querySelector(".storage h4");
-console.log(storageT);
+// console.log(storageT);
 const storageTick = document.querySelector(".storage .tick");
-console.log(storageTick);
+// console.log(storageTick);
 
 const profile = document.querySelector(".profile");
-console.log(profile);
+// console.log(profile);
 const profileT = document.querySelector(".profile h4");
-console.log(profileT);
+// console.log(profileT);
 const profileTick = document.querySelector(".profile .tick");
-console.log(profileTick);
+// console.log(profileTick);
 
 
 // Fourth Div
 const fourthDiv = document.querySelector(".fourthDiv");
-console.log(fourthDiv)
+// console.log(fourthDiv)
 
 const planSelected = document.querySelector(".plan")
-console.log(planSelected)
+// console.log(planSelected)
 
 const addOnsSelected = document.querySelector(".addOnsSelected")
-console.log(addOnsSelected)
+// console.log(addOnsSelected)
 
 const addOnsSelectedT = document.querySelector(".addOnsSelected .select");
-console.log(addOnsSelectedT)
+// console.log(addOnsSelectedT)
 const addOnsSelectedT1 = document.querySelector(".addOnsSelected .doubleTap");
-console.log(addOnsSelectedT1)
+// console.log(addOnsSelectedT1)
 
 const total = document.querySelector(".total");
-console.log(total)
+// console.log(total)
 
 const month = document.querySelector(".month")
-console.log(month);
+// console.log(month);
 const year = document.querySelector(".year")
-console.log(year);
+// console.log(year);
 
 
 // Fifth Div
 const fifthDiv = document.querySelector(".fifthDiv")
-console.log(fifthDiv)
+// console.log(fifthDiv)
 const cardInput = document.querySelector(".fifthDiv .cardInfo input:nth-child(1)")
-console.log(cardInput)
+// console.log(cardInput)
 const MYInput = document.querySelector(".fifthDiv .cardInfo input:nth-child(2)")
-console.log(MYInput)
+// console.log(MYInput)
 const CSCInput = document.querySelector(".fifthDiv .cardInfo input:nth-child(3)")
-console.log(CSCInput)
+// console.log(CSCInput)
 
 
 const endDiv = document.querySelector(".endDiv");
-console.log(endDiv)
+// console.log(endDiv)
 
 
 
 const circle1 = document.querySelector(".sideDiv div:nth-child(1) .circle");
-console.log(circle1)
+// console.log(circle1)
 const circle2 = document.querySelector(".sideDiv div:nth-child(2) .circle");
-console.log(circle2)
+// console.log(circle2)
 const circle3 = document.querySelector(".sideDiv div:nth-child(3) .circle");
-console.log(circle3)
+// console.log(circle3)
 const circle4 = document.querySelector(".sideDiv div:nth-child(4) .circle");
-console.log(circle4)
+// console.log(circle4)
 const circle5 = document.querySelector(".sideDiv div:nth-child(5) .circle");
-console.log(circle5)
+// console.log(circle5)
 
 const nextStep1 = document.querySelector(".firstDiv button");
-console.log(nextStep1)
+// console.log(nextStep1)
 const nextStep2 = document.querySelector(".secondDiv button:nth-child(2)");
-console.log(nextStep2)
+// console.log(nextStep2)
 const nextStep3 = document.querySelector(".thirdDiv button:nth-child(2)");
-console.log(nextStep3)
+// console.log(nextStep3)
 const nextStep4 = document.querySelector(".fourthDiv button:nth-child(2)");
-console.log(nextStep4)
+// console.log(nextStep4)
 const confirmButton = document.querySelector(".fifthDiv button:nth-child(2)");
-console.log(confirmButton)
+// console.log(confirmButton)
 
 
 
 const goBack2 = document.querySelector(".secondDiv button:nth-child(1)")
-console.log(goBack2)
+// console.log(goBack2)
 const goBack3 = document.querySelector(".thirdDiv button:nth-child(1)")
-console.log(goBack3)
+// console.log(goBack3)
 const goBack4 = document.querySelector(".fourthDiv button:nth-child(1)")
-console.log(goBack4)
+// console.log(goBack4)
 const goBack5 = document.querySelector(".fifthDiv button:nth-child(1)")
-console.log(goBack5)
+// console.log(goBack5)
 
 
 
 
 const messageDiv = document.querySelector(".messageDiv");
-console.log(messageDiv)
+// console.log(messageDiv)
 const messageDiv2 = document.querySelector(".messageDiv2");
-console.log(messageDiv2)
+// console.log(messageDiv2)
 const messageDiv3 = document.querySelector(".messageDiv3");
-console.log(messageDiv3)
+// console.log(messageDiv3)
 
 function hideMessage() {
   messageDiv.classList.add("hidden");
