@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="main.css">
+        <script defer src="main.js"></script>
+        <title>Personal Info</title>
+    </head>
+<body>
+    <div class="mainDiv">
+        <div class="sideDiv">
+            <div>
+                <div class="circle">1</div>
+                <div class="step1">
+                    <h5>STEP 1</h5>
+                    <h3>YOUR INFO</h3>
+                </div>
+            </div>
+            <div>
+                <div class="circle">2</div>
+                <div class="step1">
+                    <h5>STEP 2</h5>
+                    <h3>SELECT PLAN</h3>
+                </div>
+            </div>
+            <div>
+                <div class="circle">3</div>
+                <div class="step1">
+                    <h5>STEP 3</h5>
+                    <h3>ADD-ONS</h3>
+                </div>
+            </div>
+            <div>
+                <div class="circle">4</div>
+                <div class="step1">
+                    <h5>STEP 4</h5>
+                    <h3>SUMMARY</h3>
+                </div>
+            </div>
+            <div>
+                <div class="circle">5</div>
+                <div class="step1">
+                    <h5>STEP 5</h5>
+                    <h3>PAYMENT</h3>
+                </div>
+            </div>
+            <h5 class="select">support@loremgaming.com</h5>
+        </div>
+
+
+        <div class="firstDiv">
+            <h1>Personal Information</h1>
+            <h5>Please provide your name, email address and phone number</h5>
+            <div>
+                <h4>Name</h4>
+                <input type="text" class="name" placeholder="e.g.Stephen King" required value="Gentrit Hoti">
+            </div>
+            <div>
+                <h4>Email Address</h4>
+                <input type="text" class="email" placeholder="e.g.stephenking@lorem.com" value="Gentrit.hoti@gmail.com">
+            </div>
+            <div>
+                <h4>Phone Number</h4>
+                <input type="tel" class="phone" placeholder="e.g. +383 43 560 176" value="+383 43 560 176">
+            </div>
+            <div class="buttonDiv">
+                <button>Next Step</button>
+            </div>
+            <div class="messageDiv hidden"><h5>Cannot go to the next step without filling all your data!</h5></div>
+        </div>
+
+
+        <div class="secondDiv">
+            <h1>Select your plan</h1>
+            <h5>You have the option of monthly or yearly billing.</h5>
+
+            <div class="arcade">
+                <div class="tick">🗸</div>
+                <h3>Arcade $9/mo</h3>
+            </div>
+            <div class="advanced">
+                <div class="tick">🗸</div>
+                <h3>Advanced $12/mo</h3>
+            </div>
+            <div class="pro">
+                <div class="tick">🗸</div>
+                <h3>Pro $15/mo</h3>
+            </div>
+
+            <h4>Select billing option</h4>
+            <div class="bill">
+                <div class="monthly">Monthly</div>
+                <div class="yearly">Yearly</div>
+            </div>
+            <div class="buttonDiv">
+                <button>Go Back</button>
+                <button>Next Step</button>
+            </div>
+            <div class="messageDiv2 hidden"><h5>Cannot go to the next step without selecting a plan and a billing option!</h5></div>
+        </div>
+
+
+        <div class="thirdDiv">
+            <h1>Pick add-ons</h1>
+            <h5> Add-ons help enhance your gaming experience. </h5>
+
+            <div class="games">
+                <div class="tick">🗸</div>
+                <h4>+$1/mo - Online service Access to multiplayer games</h4>
+            </div>
+            <div class="storage">
+                <div class="tick">🗸</div>
+                <h4>+$2/mo - Larger storage Extra 1TB of cloud save</h4>
+            </div>
+            <div class="profile">
+                <div class="tick">🗸</div>
+                <h4>+$2/mo - Customizable Profile Custom theme on your profile</h4>
+            </div>
+
+            <div class="buttonDiv">
+                <button>Go Back</button>
+                <button>Next Step</button>
+            </div>
+        </div>
+
+
+        <div class="fourthDiv">
+            <h1>Finishing Up</h1>
+            <h5>Double-check everything looks OK before confirming.</h5>
+
+            <h4>Plan Selected:</h4>
+            <div class="plan">
+                <!-- <h5>Double-Tap to change your plan</h5> -->
+                <!-- <div>arcade</div> -->
+            </div>
+            <h4>Add-ons: </h4>
+            <div class="addOnsSelected">
+                <h5 class="select">No add-ons selected</h5>
+                <h5 class="doubleTap">Double-Tap to remove add-on</h5>
+            </div>
+
+            <h3 class="total"></h3>
+            <h4 class="payMethod">/ (<em class="month">MONTH</em> <em class="hehe">/</em> <em class="year">YEAR</em>)</h4>
+
+            <div class="buttonDiv">
+                <button>Go Back</button>
+                <button>Next Step</button>
+            </div>
+        </div>
+
+        <div class="fifthDiv">
+            <h1>Payment</h1>
+            <h5>Please provide your card information.</h5>
+            <div class="cardInfo">
+                <input type="number" placeholder="Card Number" value="4532015112897654">
+                <input type="text" placeholder="MM/YY">
+                <input type="text" placeholder="CSC">
+            </div>
+
+
+            <div class="buttonDiv">
+                <button>Go Back</button>
+                <button>Confirm</button>
+            </div>
+            <div class="messageDiv3 hidden"><h5>Cannot confirm payment without filling all data!</h5></div>
+        </div>
+
+
+        <div class="endDiv">
+
+            <h2>Thank you for confirming your subscription!</h2>
+            <h4>Your data has been saved!</h4>
+            <!-- <h3></h3> -->
+            <!-- <button>Finish up</button> -->
+            <!-- <h5>If you ever need support, please feel free to email us at support@loremgaming.com. </h5> -->
+        </div>
+    </div>
+</body>
+</html>
+
+

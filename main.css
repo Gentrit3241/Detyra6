@@ -1,0 +1,753 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    /* justify-items: center; */
+    /* align-content: center; */
+    align-items: center;
+    background-color: aliceblue;
+    user-select: none;
+}
+
+.select {
+    user-select: text;
+}
+
+.mainDiv {
+    border-radius: 10px;
+    height: 600px;
+    max-width: 100vh;
+    background-color: white;
+    padding: 20px;
+    padding-right: 0px;
+    display: flex;
+}
+
+.sideDiv {
+    position: relative;
+    background-color: rgba(69, 133, 85, 1);
+    width: 28vh;
+    height: calc(100% - 20px);
+    margin-left: 0px;
+    border-radius: 10px;
+    padding: 20px;
+    padding-right: 50px;
+    padding-top: 0px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-start; */
+    align-items: flex-start;
+    cursor: auto;
+}
+.sideDiv h5 {
+    position: absolute;
+    bottom: 10px;
+    left: 24%;
+    color: rgba(255, 255, 255);
+
+}
+.sideDiv div {
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 10px;
+    padding-left: 0px;
+}
+.circle {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    /* background-color: white; */
+    color: white;
+    font-size: larger;
+    margin-right: 20px;
+    outline: 1px white solid;
+}
+
+.sideDiv div:nth-child(1) .circle {
+    color: rgba(69, 133, 85, 1);
+    background-color: white;
+    /* outline: none; */
+}
+
+
+.step1 {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    position: relative;
+
+}
+.step1 h5 {
+    font-size: 12px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+
+
+h5 {
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 5px;
+    /* text-align: left; */
+    text-align: start;
+}
+h3 {
+    margin: 0px;
+    padding: 0px;
+    padding-top: 20px;
+}
+
+
+
+.firstDiv {
+    margin: 0px 50px 0px 50px;
+    width: 50vh;
+    position: relative;
+    /* display: none; */
+}
+.firstDiv h5 {
+    color: grey;
+    font-size: 14px;
+}
+.firstDiv h4 {
+    margin: 0px;
+}
+.firstDiv div {
+    padding-top: 30px ;
+}
+.firstDiv input {
+    margin-top: 10px;
+    width: 92%;
+    height: 35px;
+    text-indent: 2ch;
+    border-radius: 5px;
+    /* outline: none; */
+    border: 1px rgba(128, 128, 128, 0.5) solid;
+}
+
+.firstDiv .buttonDiv {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+.buttonDiv button {
+    background-color: rgb(46, 73, 52);
+    color: white;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.buttonDiv button:active {
+    width: 101px;
+    height: 31px;
+}
+.messageDiv {
+    position: absolute;
+    left: 90px; 
+    bottom: 40px;
+    width: fit-content;
+    opacity: 1;
+    transition: opacity 1s ease;
+    border: 1px rgb(128, 128, 128, 0.4) solid;
+    border-radius: 5px;
+    padding: 5px!important;
+    /* margin: 0px; */
+  }
+.messageDiv2 {
+    position: absolute;
+    left: 90px; 
+    bottom: 40px;
+    width: fit-content;
+    opacity: 1;
+    transition: opacity 1s ease;
+    border: 1px rgb(128, 128, 128, 0.4) solid;
+    border-radius: 5px;
+    padding: 5px!important;
+    margin: 0px!important;
+  }
+.messageDiv3 {
+    position: absolute;
+    left: 137px; 
+    bottom: 40px;
+    width: fit-content;
+    opacity: 1;
+    transition: opacity 1s ease;
+    border: 1px rgb(128, 128, 128, 0.4) solid;
+    border-radius: 5px;
+    padding: 5px!important;
+    margin: 0px!important;
+  }
+  .messageDiv2 h5 {
+    margin: 0px!important;
+  }
+ 
+
+  .hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+
+
+
+
+
+
+
+
+.secondDiv {
+    margin: 0px 50px 0px 50px;
+    width: 50vh;
+    height: 100%;
+    position: relative;
+    display: none;
+}
+.secondDiv h5 {
+    color: grey;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.secondDiv .arcade {
+    /* background-color: rgba(128, 128, 128, 0.2); */
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    width: 92%;
+    height: 50px;
+    border-radius: 10px;
+    /* text-indent: 3ch; */
+    cursor: pointer;
+}
+.secondDiv .arcade:hover {
+    font-size: 16.5px;
+    /* width: 93%; */
+}
+.secondDiv .arcade:active {
+    /* font-size: 16.5px; */
+    width: 93%;
+}
+.secondDiv .advanced {
+    /* background-color: rgba(128, 128, 128, 0.2); */
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    width: 92%;
+    height: 50px;
+    border-radius: 10px;
+    /* text-indent: 3ch; */
+    margin-top: 20px;
+    cursor: pointer;
+}
+.secondDiv .advanced:hover {
+    font-size: 16.5px;
+    /* width: 93%; */
+}
+.secondDiv .advanced:active {
+    /* font-size: 16.5px; */
+    width: 93%;
+}
+.secondDiv .pro {
+    /* background-color: rgba(128, 128, 128, 0.2); */
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    width: 92%;
+    height: 50px;
+    border-radius: 10px;
+    /* text-indent: 3ch; */
+    margin-top: 20px;
+    position: relative;
+    cursor: pointer;
+}
+.secondDiv .pro:hover {
+    font-size: 16.5px;
+    /* width: 93%; */
+}
+.secondDiv .pro:active {
+    /* font-size: 16.5px; */
+    width: 93%;
+}
+
+.secondDiv h3 {
+    padding: 0px;
+    color: rgba(128, 128, 128, 1);
+}
+.tick {
+    font-size: 25px;
+    color: rgba(128, 128, 128, 0.5);
+    position: absolute;
+    left: 20px;
+}
+
+.secondDiv h4 {
+    margin-top: 100px;
+    margin-bottom: 10px;
+    padding: 0px;
+}
+.secondDiv .bill {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 92%;
+    /* height: 30px; */
+    border-radius: 10px;
+    /* text-indent: 3ch; */
+    
+    color: rgb(80, 80, 80);
+    position: relative;
+}
+
+
+.secondDiv .bill .monthly {
+    /* background-color: rgba(128, 128, 128, 0.2); */
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    width: 30%;
+    height: 35px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+}
+.secondDiv .bill .monthly:hover {
+    /* font-weight: bold; */
+    font-size: 16.5px;
+    /* width: 31%; */
+}
+.secondDiv .bill .monthly:active {
+    /* font-size: 16.5px; */
+    width: 31%;
+}
+.secondDiv .bill .yearly {
+    /* background-color: rgba(128, 128, 128, 0.2); */
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    width: 30%;
+    height: 35px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+}
+.secondDiv .bill .yearly:hover {
+    /* font-weight: bold; */
+    font-size: 16.5px;
+    /* width: 31%; */
+}
+.secondDiv .bill .yearly:active {
+    /* font-size: 16.5px; */
+    width: 31%;
+}
+
+.secondDiv .buttonDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    align-content: flex-end;
+    /* position: relative; */
+    bottom: 0px;
+    margin-top: 78px;
+    /* cursor: pointer; */
+}
+
+
+
+
+
+
+.thirdDiv {
+    margin: 0px 50px 0px 50px;
+    width: 50vh;
+    height: 100%;
+    position: relative;
+    display: none;
+}
+
+.thirdDiv h5 {
+    color: grey;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.thirdDiv h4 {
+    padding: 0px;
+
+}
+.tickk {
+    color: white;
+}
+.ickk {
+    background-color: rgba(69, 133, 85, 1);
+}
+
+.thirdDiv .games {
+    /* background-color: rgba(128, 128, 128, 0.2); */
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    width: 92%;
+    height: 50px;
+    border-radius: 10px;
+    /* text-indent: 3ch; */
+    cursor: pointer;
+    color: rgba(128, 128, 128, 1);
+}
+.thirdDiv .games:hover {
+    /* font-size: 16.5px; */
+    width: 95%;
+}
+.thirdDiv .games:active {
+    font-size: 16.5px;
+    /* width: 95%; */
+}
+.thirdDiv .storage {
+    /* background-color: rgba(128, 128, 128, 0.2); */
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    width: 92%;
+    height: 50px;
+    border-radius: 10px;
+    /* text-indent: 3ch; */
+    margin-top: 20px;
+    cursor: pointer;
+    color: rgba(128, 128, 128, 1);
+}
+.thirdDiv .storage:hover {
+    /* font-size: 16.5px; */
+    width: 95%;
+}
+.thirdDiv .storage:active {
+    font-size: 16.5px;
+    /* width: 95%; */
+}
+.thirdDiv .profile {
+    /* background-color: rgba(128, 128, 128, 0.2); */
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    width: 92%;
+    height: 50px;
+    border-radius: 10px;
+    /* text-indent: 3ch; */
+    margin-top: 20px;
+    position: relative;
+    cursor: pointer;
+    color: rgba(128, 128, 128, 1);
+}
+.thirdDiv .profile:hover {
+    /* font-size: 16.5px; */
+    width: 95%;
+}
+.thirdDiv .profile:active {
+    font-size: 16.5px;
+    /* width: 95%; */
+}
+
+.thirdDiv .profile h4 {
+    width: 70%;
+}
+.thirdDiv .games h4 {
+    width: 70%;
+}
+.thirdDiv .storage h4 {
+    width: 70%;
+}
+
+
+.thirdDiv .buttonDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    align-content: flex-end;
+    /* position: relative; */
+    /* bottom: 0px; */
+    margin-top: 245px;
+    cursor: pointer;
+}
+
+
+
+.fourthDiv {
+    margin: 0px 50px 0px 50px;
+    width: 50vh;
+    height: 100%;
+    position: relative;
+    display: none;
+    /* outline: 1px red solid; */
+}
+
+.fourthDiv h5 {
+    color: grey;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.plan h5 {
+    margin-bottom: 5px;
+}
+
+.fourthDiv .doubleTap {
+    display: none;
+    padding-bottom: 10px;
+    position: relative;
+}
+.fourthDiv h4 {
+    margin-bottom: 10px;
+}
+.total {
+    display: inline;
+    /* margin-top: 100px; */
+    /* padding-top: 50px; */
+}
+.payMethod {
+    display: inline;
+}
+.fourthDiv em {
+    font-style: normal;
+}
+.month {
+    color: rgba(128, 128, 128, 0.4);
+    padding: 2px 5px;
+}
+.year {
+    color: rgba(128, 128, 128, 0.4);
+    padding: 2px 5px;
+}
+
+.month:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.month:active {
+    color: white;
+    background-color: rgba(69, 133, 85, 1);
+    border-radius: 5px;
+}
+.year:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.year:active {
+    color: white;
+    background-color: rgba(69, 133, 85, 1);
+    border-radius: 5px;
+}
+
+.hehe {
+    color: rgba(128, 128, 128, 0.4);
+}
+
+
+.fourthDiv .buttonDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    align-content: flex-end;
+    position: absolute;
+    bottom: 0px;
+    gap: 270px;
+    /* margin-top: 330px; */
+    cursor: pointer;
+}
+
+/* Thank you! Thanks for confirming your subscription!
+We hope you have fun using our platform.
+If you ever need support, please feel free to email us at support@loremgaming.com. */
+
+
+
+
+
+.fifthDiv {
+    margin: 0px 50px 0px 50px;
+    width: 50vh;
+    height: 100%;
+    position: relative;
+    display: none;
+    /* outline: 1px red solid; */
+}
+
+.fifthDiv h5 {
+    color: grey;
+    font-size: 14px;
+}
+.fifthDiv .cardInfo {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+.fifthDiv input {
+    width: 92%;
+    height: 35px;
+    text-indent: 2ch;
+    border-radius: 5px;
+    /* outline: none; */
+    border: 1px rgba(128, 128, 128, 0.5) solid;
+}
+
+.fifthDiv .buttonDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    align-content: flex-end;
+    position: absolute;
+    bottom: 0px;
+    gap: 270px;
+    /* margin-top: 330px; */
+    cursor: pointer;
+}
+.cardInfo input[type="number"]::-webkit-inner-spin-button,
+.cardInfo input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+
+
+
+
+
+
+
+.endDiv {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 700px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    bottom: 37%;
+    left: 32%;
+    border: 1px solid rgb(225, 225, 225);
+    display: none;
+}
+.endDiv h2 {
+    color: rgba(69, 133, 85, 1);
+    padding-top: 80px;
+}
+
+.endDiv h5 {
+    position: relative;
+    bottom: 0px;
+    /* color: red; */
+    margin-top: 30px;
+    padding-bottom: 10px;
+}
+
+.endDiv button {
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: bolder;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(69, 133, 85, 1);
+    color: white;
+    cursor: pointer;
+    opacity: 1;
+}
+.endDiv button:active {
+    font-size: 16.5px;
+}
+.endDiv button:hover {
+    width: 155px;
+}
+
+.endDiv h4 {
+    color: rgba(69, 133, 85, 1)
+}
+
+/* .mainDiv:not(.endDiv) {
+    opacity: 0.5;
+} */
+
+.plan div {
+    background-color: rgba(69, 133, 85, 1);
+    width: 420px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-radius: 7px;
+    padding-left: 20px;
+    color: white;
+    /* margin-bottom: 5px; */
+    cursor: pointer;
+}
+.plan div:active {
+    font-weight: bolder;
+}
+.plan div:hover {
+    width: 430px;
+}
+
+.addOnsSelected {
+    margin-bottom: 20px;
+}
+
+.addOnsSelected div {
+    background-color: rgba(69, 133, 85, 1);
+    width: 420px;
+    min-height: 50px;
+    /* max-height: 50px; */
+    display: flex;
+    align-items: center;
+    border-radius: 7px;
+    /* text-indent: 2ch; */
+    padding-left: 20px;
+    color: white;
+    /* margin-bottom: 5px; */
+    cursor: pointer;
+    margin-bottom: 15px;
+    margin-top: 7.5px;
+}
+.addOnsSelected div:active {
+    font-weight: bolder;
+}
+.addOnsSelected div:hover {
+    width: 430px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
