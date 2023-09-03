@@ -510,6 +510,10 @@ h3 {
 .plan h5 {
     margin-bottom: 5px;
 }
+.plan div {
+    width: 70%;
+}
+
 
 .fourthDiv .doubleTap {
     display: none;
@@ -570,7 +574,7 @@ h3 {
     align-content: flex-end;
     position: absolute;
     bottom: 0px;
-    gap: 270px;
+    gap: 175px;
     /* margin-top: 330px; */
     cursor: pointer;
 }
@@ -619,7 +623,7 @@ If you ever need support, please feel free to email us at support@loremgaming.co
     align-content: flex-end;
     position: absolute;
     bottom: 0px;
-    gap: 270px;
+    gap: 170px;
     /* margin-top: 330px; */
     cursor: pointer;
 }
@@ -640,7 +644,7 @@ If you ever need support, please feel free to email us at support@loremgaming.co
 .endDiv {
     position: absolute;
     background-color: rgba(255, 255, 255, 0.9);
-    width: 700px;
+    width: 600px;
     height: 250px;
     display: flex;
     flex-direction: column;
@@ -648,7 +652,7 @@ If you ever need support, please feel free to email us at support@loremgaming.co
     justify-content: space-between;
     border-radius: 10px;
     bottom: 37%;
-    left: 32%;
+    left: 30%;
     border: 1px solid rgb(225, 225, 225);
     display: none;
 }

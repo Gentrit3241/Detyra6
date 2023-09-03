@@ -555,6 +555,7 @@ arcade.addEventListener("click", ()=> {
     const div = document.createElement("div");
     planSelected.append(div);
     div.textContent = arcadeT.textContent;
+    div.style.width = "340px"
 
     let touchStartTime = 0;
     const doubleTapDelay = 300; // Adjust this value to set the maximum delay between taps
@@ -611,6 +612,7 @@ advanced.addEventListener("click", ()=> {
     const div = document.createElement("div");
     planSelected.append(div);
     div.textContent = advancedT.textContent;
+    div.style.width = "340px"
 
 
 
@@ -669,6 +671,7 @@ pro.addEventListener("click", ()=> {
     const div = document.createElement("div");
     planSelected.append(div);
     div.textContent = proT.textContent;
+    div.style.width = "340px"
 
 
     let touchStartTime = 0;
@@ -862,6 +865,7 @@ games.addEventListener("click", ()=> {
     const div = document.createElement("div");
     addOnsSelected.append(div);
     div.textContent = gamesT.textContent;
+    div.style.width = "340px"
     div.classList.add("gamer1")
 
     let touchStartTime = 0;
@@ -956,6 +960,7 @@ storage.addEventListener("click", ()=> {
 
     const div = document.createElement("div");
     addOnsSelected.append(div);
+    div.style.width = "340px";
     div.textContent = storageT.textContent;
     div.classList.add("gamer2")
 
@@ -1048,6 +1053,7 @@ profile.addEventListener("click", ()=> {
 
     const div = document.createElement("div");
     addOnsSelected.append(div);
+    div.style.width = "340px";
     div.textContent = profileT.textContent;
     div.classList.add("gamer3")
 
